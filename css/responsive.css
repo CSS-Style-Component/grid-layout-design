@@ -1,0 +1,128 @@
+
+
+
+/*==============================*/
+/*Desktop Layout 991px to 768px*/
+/*==============================*/
+@media only screen and (max-width: 768px){
+
+	
+	/*Team Member Section*/
+	.team-container{
+		grid-row-gap: 25px;
+	}
+	.team-item:last-child{
+		grid-column-start: 2;
+	}
+	/*about Section*/
+	.about-container{
+		padding: 14px;
+	}
+	.about-item2{
+		margin-top: 0px;
+	}
+	.about-item2 h2{
+		font-size: 25px;
+	}
+	.about-item2 p{
+		margin-top: 10px;
+		margin-bottom: 15px;
+	}
+	/*portfolio section*/
+	.portfolio-container img:last-child{
+		grid-column-start: 2;
+	}
+
+}
+
+
+
+/*==============================*/
+/*Wide Mobile Layout 767px to 480px*/
+/*==============================*/
+@media only screen and (max-width: 650px){
+
+
+	/*about section*/
+	.about-item2 h2 {
+	    font-size: 22px;
+	}
+	.about-item2 p {
+	    margin-top: 0px;
+	    margin-bottom: 10px;
+	    font-size: 13.7px;
+	}
+	/*member section*/
+	.membership-container{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.membership-buy{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+
+}
+@media only screen and (max-width: 504px){
+
+	
+	/*about section*/
+	.about-item2 h2 {
+	    font-size: 18px;
+	}
+	.about-btn{
+		display: flex;
+		justify-content: center;
+	}
+
+}
+@media only screen and (max-width: 480px){
+
+	header {
+	    padding: 35px 0px 10px;
+	}
+	/*navigation section*/
+	.main-menu ul li a{
+		font-size: 16px;
+		padding: 8px 0px;
+	}
+
+}
+
+
+
+
+
+/*==============================*/
+/*Mobile Layout 479px to 320px*/
+/*==============================*/
+@media only screen and (max-width: 479px){
+
+
+	/*navigation Section*/
+	.main-menu ul {
+	    display: grid;
+	    grid-template-columns: repeat(1, 1fr);
+	    grid-row-gap: 15px;
+	}
+	/*team member section*/
+	.team-container{
+		display: block;
+	}
+	.team-item{
+		margin-bottom: 25px;
+	}
+	.team-item:last-child{
+		margin-bottom: 0px;
+	}
+	/*portfolio section*/
+	.portfolio-container {
+	    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	}
+	.membership-buy {
+	    grid-template-columns: 1fr;
+	    grid-row-gap: 0px;
+	}
+
+}

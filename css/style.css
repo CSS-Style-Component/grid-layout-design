@@ -1,0 +1,311 @@
+
+
+/*========================*/
+/* BASIC SETUP */
+/*========================*/
+
+
+@font-face{
+	src: url('../vendors/fonts/TitilliumWeb-Regular.ttf');
+	font-family: Titillium Web;
+}
+/*all html tag select*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	outline: none;
+	line-height: 1.5;
+}
+/*html tag*/
+html{
+	scroll-behavior: smooth;
+}
+/*body tag*/
+body{
+	font-family: Titillium Web;
+	text-rendering: optimizeLegibility;
+}
+/*list tag*/
+ul li{
+	list-style-type: none;
+}
+/*anchor tag*/
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+/*img tag*/
+img{
+	vertical-align: middle;
+}
+
+
+/*=======================*/
+/* REUSABLE COMPONENTS */
+/*=======================*/
+/*button*/
+.btn{
+	background: #333;
+	color: #fff;
+	padding: 7px 25px;
+	border-radius: 4px;
+	text-transform: capitalize;
+	margin-top: 25px;
+}
+header{
+	padding: 50px 0px 20px
+}
+section{
+	padding: 10px 0px;
+}
+footer{
+	padding: 30px 0px 20px;
+}
+
+
+
+
+/*============================*/
+/*Navigation Section Design*/
+/*===========================*/
+.header-section{
+	max-width: 100%;
+	background: #ccc;
+}
+.header-wrapper{
+	max-width: 90%;
+	margin: auto;
+	display: block;
+}
+.main-menu ul{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 30px;
+}
+.main-menu ul li a{
+	display: block;
+	background: #ddd;
+	color: #333;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 15px 0px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 5px rgb(104, 104, 105, 0.8);
+	box-shadow: 0 1px 5px rgb(104, 104, 105, 0.8);
+}
+.main-menu ul li a:hover{
+	background: #333;
+	color: #ddd;
+}
+
+
+
+
+
+
+/*===========================*/
+/*Membership Section Design*/
+/*==========================*/
+.membership-section{
+	max-width: 100%;
+	background: #ccc;
+}
+.membership-wrapper{
+	max-width: 90%;
+	margin: auto;
+	display: block;
+}
+.membership-container{
+	display: grid;
+	grid-template-columns: 6fr 1fr;
+	grid-column-gap: 30px;
+}
+.membership-showcase{
+	background: url("../images/showcase.jpg");
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center top;
+	max-width: 100%;
+	min-height: 400px;
+	-webkit-box-shadow: 0 1px 5px rgb(104, 104, 105, 0.8);
+	box-shadow: 0 1px 5px rgb(104, 104, 105, 0.8);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0px 0px 0px 50px;
+}
+.membership-showcase h2{
+	color: #fff;
+	font-size: 40px;
+	font-weight: 600;
+}
+.membership-showcase{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+}
+.membership-buy{
+	display: grid;
+	grid-template-rows: auto;
+	grid-row-gap: 30px;
+}
+.membership-buy-item{
+	background: #ddd;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	-webkit-box-shadow: 0 1px 5px rgb(104, 104, 105, 0.8);
+	box-shadow: 0 1px 5px rgb(104, 104, 105, 0.8);
+}
+.membership-buy-item p{
+	margin-top: 20px;
+	font-size: 30px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+/*===========================*/
+/*Team Member Section Design*/
+/*==========================*/
+.team-section{
+	max-width: 100%;
+	background: #ccc;
+}
+.team-wrapper{
+	max-width: 90%;
+	margin: auto;
+	display: block;
+}
+.team-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-column-gap: 25px;
+}
+.team-item{
+	background: #ddd;
+	text-align: center;
+	padding: 30px 40px;
+	-webkit-box-shadow: 0 1px 5px rgb(104, 104, 105, 0.8);
+	box-shadow: 0 1px 5px rgb(104, 104, 105, 0.8);
+}
+.team-item i{
+	font-size: 60px;
+}
+.team-item h3{
+	font-size: 20px;
+	margin: 10px 0px 12px
+}
+
+
+
+
+
+
+
+
+
+
+/*==============================*/
+/*About Secion Design*/
+/*=============================*/
+.about-section{
+	max-width: 100%;
+	background: #ccc;
+}
+.about-wrapper{
+	max-width: 90%;
+	margin: auto;
+	display: block;
+}
+.about-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-column-gap: 25px;
+	-webkit-box-shadow: 0 1px 5px rgb(104, 104, 105, 0.8);
+	box-shadow: 0 1px 5px rgb(104, 104, 105, 0.8);
+	padding: 48px;
+}
+.about-item1 img{
+	max-width: 100%;
+	min-height: 100%;
+}
+.about-item2{
+	margin-top: 15px;
+}
+.about-item2 h2{
+	font-size: 30px;
+}
+.about-item2 p{
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+/*==============================*/
+/*Portfolio Secion Design*/
+/*=============================*/
+.portfolio-section{
+	max-width: 100%;
+	background: #ccc;
+}
+.portfolio-wrapper{
+	max-width: 90%;
+	margin: auto;
+	display: block;
+}
+.portfolio-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+.portfolio-container img{
+	width: 100%;
+	height: 223px;
+	-webkit-box-shadow: 0 1px 5px rgb(104, 104, 105, 0.8);
+	box-shadow: 0 1px 5px rgb(104, 104, 105, 0.8);
+}
+
+
+
+
+
+
+/*==============================*/
+/*Footer Secion Design*/
+/*=============================*/
+.footer-section{
+	max-width: 100%;
+	background: #ccc;
+}
+.footer-wrapper{
+	max-width: 90%;
+	margin: auto;
+	display: block;
+}
+.footer-container{
+	background: #222;
+	padding: 20px 0px;
+}
+.footer-container p{
+	text-align: center;
+	color: #fff;
+}
